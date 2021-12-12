@@ -3,33 +3,56 @@ import Tab from 'react-bootstrap/Tab'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
-import Sonnet from 'react-bootstrap/'
+import Container from 'react-bootstrap/Container'
+import Dashboard from '../pages/dashboard';
+import NavBar from './navbar';
+import Users from '../pages/users';
 
 export default function SideBar(){
     return (
+        <Container fluid>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
-          <Col sm={3}>
+          <Col sm={2} className="pt-3" >
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
-                <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                <Nav.Link eventKey="dashboard">                   
+                    Dashboard
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                   <Nav.Link eventKey="users">
+                     Users
+                   </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="hotels">Hotels</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="restaurants">Restaurants</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="vacations">Vacations</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
-          <Col sm={9}>
+          <Col sm={10}>
+          <NavBar />
             <Tab.Content>
-              <Tab.Pane eventKey="first">
-                {/* <Sonnet /> */}
+              <Tab.Pane eventKey="dashboard" >
+                  <Dashboard />
               </Tab.Pane>
-              <Tab.Pane eventKey="second">
-                {/* <Sonnet /> */}
+              <Tab.Pane eventKey="users">
+              <Users />
+              </Tab.Pane>
+              <Tab.Pane eventKey="hotels">
+              </Tab.Pane>
+              <Tab.Pane eventKey="restaurants">
               </Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>
       </Tab.Container>
+        </Container>
     );
 };
