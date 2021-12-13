@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Hotels  from './collection/Hotels'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+  } from "react-router-dom";
+import HotelsUpadate from './collection/HotelsUpdate';
+
+
+function App (){
+    return(
+     <>
+
+     {/* <h1>ay 7aga</h1> */}
+   <Router >
+    <Switch>
+       <Route path={'/'}  exact component={Hotels} />
+       <Route path={"/HotelsUpdate/:id"}  component={HotelsUpadate} />
+       <Route path={"/addHotels"}  exact  component={HotelsUpadate} />
+  </Switch> 
+ </Router> 
+ </> 
+    )
+
 }
-
 export default App;
