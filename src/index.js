@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import store from './store/store'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./assets/css/animate.min.css";
-import "./assets/css/demo.css";
+
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

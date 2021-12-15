@@ -1,6 +1,6 @@
 import {
     app
-} from "../../API/FirebaseConfig"
+} from "../../config/firebase"
 import {
     getFirestore,
     collection,

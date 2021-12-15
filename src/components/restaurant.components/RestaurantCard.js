@@ -5,7 +5,7 @@ import { getTempRestaurantById } from '../../store/actions/Restaurant';
 
 import {
     app
-} from "../../API/FirebaseConfig"
+} from "../../config/firebase"
 import {
     getFirestore,
     collection,
