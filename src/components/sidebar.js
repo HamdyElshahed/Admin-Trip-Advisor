@@ -8,6 +8,7 @@ import Dashboard from '../pages/dashboard';
 import NavBar from './navbar';
 import Users from '../pages/users';
 import Restaurant from '../pages/Restaurant';
+import Hotels from '../collection/Hotels';
 
 
 export default function SideBar(){
@@ -49,6 +50,7 @@ export default function SideBar(){
                   <Users />
               </Tab.Pane>
               <Tab.Pane eventKey="hotels">
+                <Hotels />
               </Tab.Pane>
               <Tab.Pane eventKey="restaurants">
                 <Restaurant/>
