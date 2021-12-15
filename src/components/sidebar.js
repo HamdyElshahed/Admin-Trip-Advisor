@@ -9,10 +9,12 @@ import NavBar from './navbar';
 import Users from '../pages/users';
 import Restaurant from '../pages/Restaurant';
 
+
 export default function SideBar(){
+
     return (
         <Container fluid>
-        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Tab.Container id="left-tabs-example" defaultActiveKey="dashboard">
         <Row>
           <Col sm={2} className="pt-3" >
             <Nav variant="pills" className="flex-column">
@@ -44,7 +46,7 @@ export default function SideBar(){
                   <Dashboard />
               </Tab.Pane>
               <Tab.Pane eventKey="users">
-              <Users />
+                  <Users />
               </Tab.Pane>
               <Tab.Pane eventKey="hotels">
               </Tab.Pane>

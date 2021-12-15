@@ -1,0 +1,43 @@
+
+.backgroundimg {
+  background-size: cover;
+  height: 100%;
+}
+
+.registerbox {
+ box-shadow: 0px 15px 16.83px 0.17px rgba(218, 207, 207, 0.4);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.registerformlabel {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #222;
+}
+
+.registerforminput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  font-family: Poppins;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: none;
+}
+
+.registerforminput .registerforminput::-webkit-input-placeholder {
+  color: #000;
+}
+.registerforminput .registerforminput:-ms-input-placeholder {
+  color: #000;
+}
+.registerforminput .registerforminput::-ms-input-placeholder {
+  color: #000;
+}
+.registerforminput .registerforminput::placeholder {
+  color: #000;
+}
