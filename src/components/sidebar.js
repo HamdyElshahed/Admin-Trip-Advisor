@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container'
 import Dashboard from '../pages/dashboard';
 import NavBar from './navbar';
 import Users from '../pages/users';
+import Restaurant from '../pages/Restaurant';
 
 export default function SideBar(){
     return (
@@ -48,7 +49,8 @@ export default function SideBar(){
               <Tab.Pane eventKey="hotels">
               </Tab.Pane>
               <Tab.Pane eventKey="restaurants">
-              </Tab.Pane>
+                <Restaurant/>
+              </Tab.Pane> 
             </Tab.Content>
           </Col>
         </Row>

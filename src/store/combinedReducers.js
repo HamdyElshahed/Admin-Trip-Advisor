@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import exampleReducer from './reducers/example';
-
+import Restaurant from './reducers/Restaurant';
+import User from './reducers/User';
+ 
 export default combineReducers({
-    example : exampleReducer,
-})
+    restaurant:Restaurant,
+    user:User
+}) 
